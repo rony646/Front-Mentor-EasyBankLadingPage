@@ -1,0 +1,48 @@
+.section3 {
+    display: flex;
+    padding: 65px;
+    flex-direction: column;
+    background-color: #fafafa;
+
+}
+
+.section3 h1 {
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.cards-wrap {
+    display: flex;
+}
+
+.cards-wrap div {
+    position: relative;
+    background-color: #ffffff;;
+    margin: 0px 20px 0px 20px;
+    height: 350px;
+}
+
+.cards-wrap p,sup {
+    padding: 4%;
+}
+
+.cards-wrap div sup {
+    display: inline-block;
+    margin-top: 3px;
+}
+
+@media (max-width: 1024px) {
+    .cards-wrap {
+        flex-direction: column;
+    }
+
+    .section3 h1 {
+        margin-left: 15px;
+    }
+
+    .cards-wrap div {
+        margin: 15px 0px 15px 0px;
+        height: 400px;
+    }
+}
+

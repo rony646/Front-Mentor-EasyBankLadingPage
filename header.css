@@ -1,0 +1,82 @@
+
+header {
+    position: fixed;
+    background-color: #ffffff;
+    height: 60px;
+    width: 100%;
+    z-index: 5;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    margin: 0.8vw;
+}
+
+ul li a {
+    text-decoration: none;
+    color: inherit;
+    padding-bottom: 17px;
+}
+
+ul li a:hover {
+    color: #5a5a5a;
+    border-bottom: 3px solid #31d35c;
+}
+
+.logo {
+    margin-left: 130px;
+}
+
+.invite-button-mobile {
+    display: none;
+}
+
+#invite-button {
+    margin-right: 130px;
+
+    font-family: 'Public Sans';
+    font-weight: 400;
+    font-size: 0.8em;
+    color: #ffffff;
+
+    height: 45px;
+    width: 120px;
+
+    border-radius: 1.2em;
+    border: none;
+    outline: none;
+
+    background-image: linear-gradient(to right, #31d35c, #2bb7da);
+}
+
+#invite-button:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    opacity: 65%;
+}
+
+@media (max-width: 1000px) {
+    .header ul {
+        display: none;
+    }
+    .invite-button-mobile {
+        display: inline-block;
+    }
+    .logo, .invite-button-mobile{
+        margin: 1.2em;
+    }
+
+    .invite-button-desktop {
+        display: none;
+    }
+}

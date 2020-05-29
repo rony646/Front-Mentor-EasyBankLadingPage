@@ -1,0 +1,122 @@
+/* First section of the page */
+
+.section1 {
+    display: flex;
+    background-color: #fafafa;
+}
+
+
+#bg-img {
+    position: absolute;
+    margin-top: -135px;
+    height: 690px;
+    width: 920px;
+    margin-left: 2vw;
+    z-index: 4;
+}
+
+#bg-mock {
+    position: absolute;
+
+    margin-top: -40px;
+    margin-left: 63vw;
+
+    height: 680px;
+    width: 550px;
+    z-index: 4;
+}
+
+.intro {
+    position: relative;
+    padding: 6em;
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.intro h1 {
+    font-size: 2em;
+    opacity: 0.7;
+}
+
+.mobile-top {
+    display: none;
+}
+
+#bg-img-mobile {
+    display: none;
+}
+
+#bg-mock-mobile {
+    display: none;
+}
+
+
+@media (max-width: 1024px) {
+    .section1 {
+        flex-direction: column;
+    }
+
+    .intro {
+        display: flex;  
+        position: relative;
+        padding: 6em;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .intro h1 {
+        text-align: center;
+        margin: -10px;
+    }
+
+    .intro p {
+        margin: 0px;
+        padding: 1.3em 0px 1.3em 0px;
+        text-align: justify;
+        text-align: center;
+    }
+
+    .intro p br {
+        display: none;
+    }
+
+    .intro #invite-button {
+        height: 60px;
+        width: 150px;
+    }
+
+    .mobile-top {
+        background-color:#fafafa;
+        overflow: hidden;
+        display: inline-block;
+    }
+
+    .bg-intro-desktop {
+        display: none;
+    }
+
+    #bg-mock-mobile {
+        position: absolute;
+        display: inline-block;
+        margin-top: -605px;
+        margin-left: 5vw;
+        height: 550px;
+        z-index: 2;
+    }
+
+    #bg-mock {
+        display: none;
+    }
+
+    #bg-img-mobile {
+        position: relative;
+        margin-top: -25vh;
+        margin-left: -30vw;
+        height: 690px;
+        width: 220vw;
+        display: inline-block;
+        z-index: 1;
+    }
+}
+
