@@ -10,7 +10,7 @@ openButton.addEventListener('click', () => {
     }
 
     else if(openButton.classList.contains('opened')) {
-        openButton.src = './../images/icon-hamburger.svg';
+        openButton.src = './images/icon-hamburger.svg';
         openButton.classList.remove('opened');
         openButton.classList.add('closed');
         menu.style.display = 'none';
