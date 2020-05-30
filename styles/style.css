@@ -95,13 +95,38 @@ footer div ul li {
     opacity: 65%;
 }
 
+.menu {
+    display: none;
+}
+
 /* Mobile Layout */
 
 @media (max-width: 1024px) {
     .container {
         display: grid;
         grid-template-rows: 400px 520px 1150px 48% 14%;
-        min-height: 100vh;
+        min-height: 100%;
+    }
+
+    .menu {
+        display: none;
+        position:absolute;
+        justify-content: center;
+        height: 605%;
+        z-index: 8;
+        width: 50%;
+        background-color: #e7e7e7;
+        border-right: 5px solid hsl(136, 65%, 51%);
+        
+    }
+
+    #mobile-links li {
+        margin-top: 45px;
+        padding: 20px;
+        font-size: 1.6em;
+        font-weight: 400;
+        text-align: center;
+        display: block;
     }
 
     footer {
