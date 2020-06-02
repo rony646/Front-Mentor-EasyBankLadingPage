@@ -99,34 +99,43 @@ footer div ul li {
     display: none;
 }
 
+.flex {
+    display: none;
+}
+
 /* Mobile Layout */
 
 @media (max-width: 1024px) {
     .container {
         display: grid;
-        grid-template-rows: 400px 520px 1150px 48% 14%;
+        grid-template-rows:  400px 520px 1160px 48% 14%;
         min-height: 100%;
     }
 
     .menu {
         display: none;
-        position:absolute;
+        position: fixed;
+        top: 50px;
+        left: 2.5%;
+        box-shadow: 20px 60px 150px 45px #000000e1;
         justify-content: center;
-        height: 605%;
+        height: 240px;
         z-index: 8;
-        width: 50%;
-        background-color: #e7e7e7;
-        border-right: 5px solid hsl(136, 65%, 51%);
-        
+        width: 95%;
+        background-color: #fffdfd;
     }
 
     #mobile-links li {
-        margin-top: 45px;
-        padding: 20px;
-        font-size: 1.6em;
+        margin-top: 12px;
+        padding: 5px;
+        font-size: 1em;
         font-weight: 400;
         text-align: center;
         display: block;
+    }
+
+    #mobile-links li a:hover {
+        border: none;
     }
 
     footer {
